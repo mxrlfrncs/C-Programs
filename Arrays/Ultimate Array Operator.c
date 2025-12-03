@@ -135,7 +135,10 @@ void searchBinary(int arr[], int size) {
 void searchMain(int arr[], int size) {
 	int pickSearch, pickLinearSearch;
 
-	printf("\nPick the type of search (Linear - 1 / Binary - 2): ");
+	printf("\nPick the type of search:");
+	printf("1. Linear - traversing from 1st element of the array to the desired element.");
+	printf("2. Binary - dividing the array thru labels left, mid, and right, only for SORTED arrays");
+	printf("\nEnter your choice (1 or 2): ");
 	scanf("%d", &pickSearch);
 
 	if (pickSearch == 1) {
@@ -244,7 +247,10 @@ void sortSelection(int arr[], int size) {
 void sortMain(int arr[], int size) {
     int pickSort;
 
-    printf("\nPick the type of sort (Bubble - 1 / Selection - 2): ");
+    printf("\nPick the type of sort:");
+	printf("1. Bubble - traversing from the 1st element by comparing to its next element forming a bubble.");
+	printf("2. Selection - selecting the smallest element then placing it to the first position of array.");
+	printf("\nEnter your choice (1 or 2): ");
     scanf("%d", &pickSort);
 
     if (pickSort == 1) {
@@ -278,7 +284,10 @@ int main() {
         mainMerge(mergeArray, arraySize);
     
     do {
-        printf("\n\nPick whether to SEARCH or SORT the array (SEARCH - 1 / SORT - 2): ");
+        printf("\n\nPick whether to SEARCH or SORT the array");
+		printf("1. SEARCH");
+		printf("2. SORT");
+		printf("\nEnter your choice (1 or 2): ");
         scanf("%d", &seSo);
 
         if (seSo == 1) {
